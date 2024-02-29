@@ -95,7 +95,7 @@ class InstrumentedTest {
 
     companion object {
         private const val APP_NAME = "Sample"
-        private const val MAX_TIMEOUT: Long = 10_000
+        private const val MAX_TIMEOUT: Long = 30_000
 
         private const val LOG_KEY = "sample_test"
 

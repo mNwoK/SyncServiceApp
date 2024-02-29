@@ -44,17 +44,21 @@ jobs:
           - 31
           - 34
         include:
-          - os: ubuntu-latest
+          - os: macos-latest
+            cores: 4
             arch: x86
             api-level: 26
             target: google_apis
             channel: stable
-          - os: ubuntu-latest
+            disable-spellchecker: true
+          - os: macos-latest
+            cores: 8
             arch: x86
             api-level: 29
+            ram_size: 4096M
             target: google_apis
             channel: stable
-          - os: ubuntu-latest
+          - os: macos-latest
             arch: x86
             api-level: 30
             target: google_apis
@@ -63,7 +67,7 @@ jobs:
             api-level: 31
             target: google_apis
             arch: x86_64
-          - os: ubuntu-latest
+          - os: macos-latest
             arch: x86_64
             api-level: 34
             target: google_apis
